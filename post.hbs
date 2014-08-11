@@ -15,6 +15,15 @@
     <section class="{{post_class}}">
       {{content}}
     </section>
+    
+    {{! Everything inside the #author tags pulls data from the author }}
+    {{#author}}
+
+        <section class="author">
+            <h4>By <a href="{{url}}">{{name}}</a></h4>
+        </section>
+
+    {{/author}}
 
   </article>
 

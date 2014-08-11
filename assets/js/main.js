@@ -18,7 +18,8 @@ $(document).ready(function() {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
 
-  if (window.location.pathname.substring(0, 5) == "/tag/") {
+  if (window.location.pathname.substring(0, 5) == "/tag/" ||
+      window.location.pathname.substring(0, 8) == "/author/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
 
